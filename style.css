@@ -1,0 +1,364 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    display: flex;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar
+{
+    margin: 5px;
+    margin-right: 5px;
+    position: absolute;
+    top: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    width: 25%;
+    background-color: #1c1a1a;
+    height: 85vh;
+    border-radius: 10px;
+    /* z-index: 1; */
+}
+.main-body
+{
+    margin: 5px;
+    position:absolute;
+    top: 50px;
+    width: 70.6%;
+    left: 26%;
+    height: 84vh;
+    padding:20px;
+    background-color: #1f1f1f;
+    overflow: auto;
+    border-radius: 15px;
+}
+.logo
+{
+    margin: 2px;
+    padding: 5px;
+    
+
+}
+.search-bar
+{
+    background-color: black;
+    width: 30rem;
+}
+.logo img
+{
+    width: 100%;
+    height: 100%;
+}
+.nav .search-bar
+{
+    display: flex;
+    /* width: 50%; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.nav .search-bar .img
+{
+    padding:5px;
+}
+.nav .search-bar .search-box
+{
+    /* padding-top: 10px; */
+    width: 85%;
+    margin-left: 10px;
+    /* border: 2px solid rgb(36, 120, 36); */
+    box-shadow: 2px 2px 5px red;
+    background-color: #1f1f1f;
+    font-size: 30px;
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+    opacity: .6;
+}
+.nav .search-bar .search-box:hover
+{
+    transform: scale(1.02);
+    opacity: 1;
+}
+.nav .search-bar .search-box #search
+{
+    height: 90%;
+    width: 80%;
+    border-top-right-radius: 50px;
+    border-end-end-radius: 50px;
+    background-color: #1f1f1f;
+    border: none;
+}
+.nav .search-bar .search-box input
+{
+    outline:none;
+    color: white;
+    font-weight: bold;
+}
+.nav .search-bar .search-box #library_icon
+{
+    padding-top: 8px;
+    padding-right:8px ;
+    height: 20px;
+    width: 20px;
+}
+.nav .sign-up
+{
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 240px;
+    /* padding-right: 50px; */
+    display: flex; 
+    justify-content: space-evenly;
+}
+.sign-up button
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+}
+#signup
+{
+    background-color:transparent;
+    color: aliceblue;
+}
+#signup:hover
+{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+}
+#login:hover
+{
+    transform: scale(1.1);
+}
+.search-bar button
+{
+    background-color: #1f1f1f;
+    border-radius: 50px;
+    border: none;
+}
+.sidebar .library
+{
+    height: 80px;
+    width: 100%;
+    background-color:#1c1a1a;
+    /* margin-right: 5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar .library #library-icon
+{
+    height: 35px;
+    width: 35px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+.sidebar .library .text-icon
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.sidebar .library .plus
+{
+    font-size: 25px;
+    padding-right: 20px;
+    opacity: .7;
+    
+}
+.sidebar .library button
+{
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: transparent;
+    opacity: .7;
+}
+.sidebar .library button:hover
+{
+    opacity: 1;
+    background-color: #121111;
+    border-radius: 50px;
+    box-shadow: 5px 2px 5px #1f1f1f;
+    /* transform: scale(1.123); */
+}
+.sidebar .library .plus:hover
+{
+    opacity: 1;
+}
+.sidebar .cards
+{
+    height: 250px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    background-color:transparent;
+    overflow-y: auto;
+}
+.sidebar .cards .card{
+    height: 150px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: rgb(43,42,42);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+.sidebar .cards .card  button{
+
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    opacity: .7;
+}
+.sidebar .cards .card  button:hover
+{
+    opacity: 1;
+    transform: scale(1.01);
+}
+.sidebar .list
+{
+    margin-top: 50px;
+    padding-left: 30px;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.sidebar .list ul
+{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgb(164, 159, 159);
+}
+.sidebar .lan-btn 
+{
+    margin: 50px;
+}
+.sidebar .lan-btn button
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid rgb(162, 158, 158);
+    opacity: .7;
+}
+.sidebar .lan-btn button:hover
+{
+    opacity: 1;
+    transform: scale(1.01);
+}
+.footer{
+    margin: 5px;
+    position: absolute;
+    bottom: 0px;
+    width: 97.5%;
+    height: 50px;
+    padding-right: 20px;
+    background-color: rgb(0, 185, 62);
+    z-index: 1; 
+    display: flex;
+    padding-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-body .pop-artist
+{
+    height: 300px;
+    background-color: transparent;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 2;
+    grid-gap: 10px;
+    padding: 5px;
+    
+
+}
+.main-body .pop-artist .art
+{
+ background-color: transparent;
+ border: 2px solid black;
+ border-radius:100% ;
+ display: flex;
+ justify-content: center;
+ place-items: center;
+ font-size: 50px;
+ grid-row:1/10;
+ margin-bottom: 10px;
+ margin-top: 10px;
+}
+.main-body .pop-artist .art-name
+{
+    text-align: center;
+    height: 30px;
+}
+.main-body .pop-albm
+{
+    margin: 10px;
+    background-color: #1f1f1f;
+    height: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 200px 100px;
+    grid-gap: 10px;
+}
+.main-body .pop-albm .alb
+{
+    background-color:transparent
+}
+.main-body .pop-albm .alb img
+{
+    width: 200px;
+    height: 200px;
+}
+.main-body .pop-albm .song-info
+{
+    padding-left: 10px;
+}
+.footer #sinup
+{
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+}
+.footer #sinup:hover
+{
+    transform: scale(1.05);
+}
